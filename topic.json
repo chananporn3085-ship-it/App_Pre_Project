@@ -1,0 +1,192 @@
+[
+  {
+    "id": "RN11",
+    "category_id": "C03",
+    "category": "Data Management",
+    "topic": "การใช้ map()",
+    "summary": "map() แปลงสมาชิกแต่ละตัวของ Array เป็นค่าหรือ JSX ที่ต้องการแสดง",
+    "concept": "map() แปลงสมาชิกแต่ละตัวของ Array เป็นค่าหรือ JSX ที่ต้องการแสดง",
+    "purpose": [
+      "แสดงรายการจากข้อมูลโดยไม่เขียน UI ซ้ำ"
+    ],
+    "code_example": "{topics.map(item => <Text key={item.id}>{item.topic}</Text>)}",
+    "explanation": "key ช่วยให้ React ติดตามเอกลักษณ์ของแต่ละรายการ",
+    "application": "สร้างรายการหัวข้อจาก Array ของ JSON",
+    "keywords": [
+      "การใช้",
+      "React Native"
+    ],
+    "image": "images/rn11.png"
+  },
+  {
+    "id": "RN12",
+    "category_id": "C03",
+    "category": "Data Management",
+    "topic": "การแยกไฟล์ Data",
+    "summary": "การแยกข้อมูลออกจากหน้าจอเป็นตัวอย่างการแยกหน้าที่ระหว่าง Data และ UI",
+    "concept": "การแยกข้อมูลออกจากหน้าจอเป็นตัวอย่างการแยกหน้าที่ระหว่าง Data และ UI",
+    "purpose": [
+      "อ่านข้อมูลจากไฟล์ใน Project ได้"
+    ],
+    "code_example": "import topics from \"../data/topic\";",
+    "explanation": "import อ่านค่าที่ไฟล์ topic.js export ออกมา",
+    "application": "ทดลองใช้ข้อมูลภายในก่อนเปลี่ยนไปใช้ GitHub",
+    "keywords": [
+      "การแยกไฟล์",
+      "React Native"
+    ],
+    "image": "images/rn12.png"
+  },
+  {
+    "id": "RN13",
+    "category_id": "C03",
+    "category": "Data Management",
+    "topic": "การอ่าน JSON จาก GitHub",
+    "summary": "GitHub สามารถโฮสต์ไฟล์ JSON แบบสาธารณะเพื่อให้แอปอ่านผ่าน Raw URL ได้",
+    "concept": "GitHub สามารถโฮสต์ไฟล์ JSON แบบสาธารณะเพื่อให้แอปอ่านผ่าน Raw URL ได้",
+    "purpose": [
+      "เตรียม Repository และ Raw URL ที่อ่านข้อมูลได้"
+    ],
+    "code_example": "const DATA_URL = \"https://raw.githubusercontent.com/owner/repo/main/data/topic.json\";",
+    "explanation": "URL นี้เป็นรูปแบบตัวอย่าง ต้องเปลี่ยน owner และ repo ให้ตรงแหล่งข้อมูลจริง",
+    "application": "เก็บข้อมูลแต่ละกลุ่มบน GitHub แล้วทดลองเปิด Raw URL",
+    "keywords": [
+      "การอ่าน",
+      "React Native"
+    ],
+    "image": "images/rn13.png"
+  },
+  {
+    "id": "RN14",
+    "category_id": "C04",
+    "category": "State และการดึงข้อมูล",
+    "topic": "State และ useState()",
+    "summary": "State เก็บข้อมูลที่เปลี่ยนระหว่างการทำงานของ Component เมื่อเรียก setter React จะจัดตารางการเรนเดอร์ใหม่",
+    "concept": "State เก็บข้อมูลที่เปลี่ยนระหว่างการทำงานของ Component เมื่อเรียก setter React จะจัดตารางการเรนเดอร์ใหม่",
+    "purpose": [
+      "เก็บข้อมูลรายการและสถานะการแสดงผล"
+    ],
+    "code_example": "const [topics, setTopics] = useState([]);",
+    "explanation": "topics คือค่าปัจจุบัน และ setTopics เป็นฟังก์ชันอัปเดต State",
+    "application": "เก็บรายการเนื้อหาที่อ่านจาก GitHub",
+    "keywords": [
+      "State",
+      "React Native"
+    ],
+    "image": "images/rn14.png"
+  },
+  {
+    "id": "RN15",
+    "category_id": "C04",
+    "category": "State และการดึงข้อมูล",
+    "topic": "useEffect()",
+    "summary": "useEffect ใช้เชื่อม Component กับระบบภายนอก เช่น การโหลดข้อมูลผ่านเครือข่าย",
+    "concept": "useEffect ใช้เชื่อม Component กับระบบภายนอก เช่น การโหลดข้อมูลผ่านเครือข่าย",
+    "purpose": [
+      "เรียกการโหลดข้อมูลเมื่อ Component เริ่มแสดง"
+    ],
+    "code_example": "useEffect(() => { loadTopics(); }, []);",
+    "explanation": "dependency array ว่างทำให้ Effect ทำงานเมื่อ mount และในโหมดพัฒนาบางกรณีอาจถูกตรวจการทำงานซ้ำ",
+    "application": "สั่งโหลดบทเรียนเมื่อเปิดหน้า Knowledge",
+    "keywords": [
+      "useEffect()",
+      "React Native"
+    ],
+    "image": "images/rn15.png"
+  },
+  {
+    "id": "RN16",
+    "category_id": "C04",
+    "category": "State และการดึงข้อมูล",
+    "topic": "fetch() และ Async/Await",
+    "summary": "fetch() เรียกข้อมูลจาก URL ส่วน async/await ช่วยเขียนการทำงานแบบ asynchronous ให้อ่านง่าย",
+    "concept": "fetch() เรียกข้อมูลจาก URL ส่วน async/await ช่วยเขียนการทำงานแบบ asynchronous ให้อ่านง่าย",
+    "purpose": [
+      "ดึงและแปลง JSON เป็น Array เพื่อนำไปแสดง"
+    ],
+    "code_example": "const response = await fetch(DATA_URL);\nif (!response.ok) throw new Error(\"HTTP \" + response.status);\nconst data = await response.json();\nsetTopics(data);",
+    "explanation": "ตรวจ response.ok ก่อนอ่าน JSON และบันทึกลง State",
+    "application": "ดึง Data ชุดที่ 1 และ 2 จาก URL คนละชุด",
+    "keywords": [
+      "fetch()",
+      "React Native"
+    ],
+    "image": "images/rn16.png"
+  },
+  {
+    "id": "RN17",
+    "category_id": "C04",
+    "category": "State และการดึงข้อมูล",
+    "topic": "Loading, Error และ Retry",
+    "summary": "การแสดงสถานะช่วยให้ผู้ใช้ทราบว่าแอปกำลังทำอะไรและสามารถลองโหลดใหม่ได้",
+    "concept": "การแสดงสถานะช่วยให้ผู้ใช้ทราบว่าแอปกำลังทำอะไรและสามารถลองโหลดใหม่ได้",
+    "purpose": [
+      "จัดการช่วงรอและกรณีเครือข่ายผิดพลาด"
+    ],
+    "code_example": "if (loading) return <ActivityIndicator />;\nif (error) return <Button title=\"ลองใหม่\" onPress={loadTopics} />;",
+    "explanation": "แสดง Indicator ขณะรอและปุ่ม Retry เมื่อมี Error",
+    "application": "เพิ่มสถานะ Loading และ Error ในหน้ารายการ",
+    "keywords": [
+      "Loading,",
+      "React Native"
+    ],
+    "image": "images/rn17.png"
+  },
+  {
+    "id": "RN18",
+    "category_id": "C05",
+    "category": "Navigation",
+    "topic": "Navigation คืออะไร",
+    "summary": "React Navigation เป็นไลบรารีที่ช่วยกำหนดเส้นทางและสถานะการนำทางระหว่างหน้าจอ",
+    "concept": "React Navigation เป็นไลบรารีที่ช่วยกำหนดเส้นทางและสถานะการนำทางระหว่างหน้าจอ",
+    "purpose": [
+      "เข้าใจการจัดกลุ่ม Navigator และหน้าจอ"
+    ],
+    "code_example": "<NavigationContainer><TopicStack /></NavigationContainer>",
+    "explanation": "NavigationContainer เป็นคอนเทนเนอร์สำหรับ Navigation ในตัวอย่าง React Navigation แบบทั่วไป",
+    "application": "วางโครงสร้างนำทางก่อนพัฒนาทุกหน้าจอ",
+    "keywords": [
+      "Navigation",
+      "React Native"
+    ],
+    "image": "images/rn18.png"
+  },
+  {
+    "id": "RN19",
+    "category_id": "C05",
+    "category": "Navigation",
+    "topic": "Stack Navigation",
+    "summary": "Stack ใช้จัดลำดับหน้าที่ผู้ใช้เปิดต่อกันและย้อนกลับได้",
+    "concept": "Stack ใช้จัดลำดับหน้าที่ผู้ใช้เปิดต่อกันและย้อนกลับได้",
+    "purpose": [
+      "เชื่อมหน้ารายการกับหน้ารายละเอียด"
+    ],
+    "code_example": "<Stack.Screen name=\"TopicDetail\" component={TopicDetailScreen} />",
+    "explanation": "กำหนดชื่อเส้นทางและคอมโพเนนต์ของหน้ารายละเอียด",
+    "application": "เปิด TopicDetail จากการกดรายการใน TopicList",
+    "keywords": [
+      "Stack",
+      "React Native"
+    ],
+    "image": "images/rn19.png"
+  },
+  {
+    "id": "RN20",
+    "category_id": "C05",
+    "category": "Navigation",
+    "topic": "Tab Navigation",
+    "summary": "Tab แสดงตัวเลือกการนำทางระหว่างส่วนหลักของแอป มักแสดงด้านล่าง",
+    "concept": "Tab แสดงตัวเลือกการนำทางระหว่างส่วนหลักของแอป มักแสดงด้านล่าง",
+    "purpose": [
+      "สร้างเมนูสลับ My Content และ Knowledge"
+    ],
+    "code_example": "<Tab.Screen name=\"Knowledge\" component={KnowledgeScreen} />",
+    "explanation": "เพิ่มหน้าชื่อ Knowledge เข้า Tab Navigator",
+    "application": "สร้าง Tab สำหรับชุดข้อมูลสองประเภท",
+    "keywords": [
+      "Tab",
+      "React Native"
+    ],
+    "image": "images/rn20.png"
+  },
+]
