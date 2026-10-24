@@ -1,192 +1,202 @@
 [
   {
-    "id": "RN11",
+    "id": "FOOD01",
+    "category_id": "C01",
+    "category": "ชาบู & สุกี้",
+    "topic": "ชาบูบุฟเฟต์หม้อร้อน (Shabu Shabu)",
+    "summary": "ชาบูน้ำซุปดำรสเข้มข้น พร้อมเนื้อสไลซ์บางนุ่มและน้ำจิ้มพอนสึสูตรเด็ด",
+    "concept": "ชาบูสไตล์ญี่ปุ่นที่เน้นวัตถุดิบสดใหม่ ซุปรสกลมกล่อม ทานคู่กับซอสสูตรพิเศษ",
+    "purpose": [
+      "เหมาะสำหรับการสังสรรค์กลุ่มใหญ่",
+      "มีตัวเลือกซุปหลายรสชาติ"
+    ],
+    "code_example": "{ id: 'FOOD01', name: 'ชาบูบุฟเฟต์', price: 399 }",
+    "explanation": "เมนูชาบูเน้นการเลือกน้ำซุปและประเภทเนื้อสัตว์",
+    "application": "ใช้แสดงในหน้ารายการอาหารหมวดชาบู/สุกี้",
+    "keywords": [
+      "ชาบู",
+      "บุฟเฟต์"
+    ],
+    "image": "https://images.unsplash.com/photo-1555396273-367ea4eb4db5?w=500"
+  },
+  {
+    "id": "FOOD02",
+    "category_id": "C01",
+    "category": "ปิ้งย่าง & หมูกระทะ",
+    "topic": "หมูกระทะชุดเตาถ่าน",
+    "summary": "หมูกระทะชุดใหญ่ หมูหมักนุ่มๆ พร้อมน้ำจิ้มสุกี้สามรสรสแซ่บ",
+    "concept": "ปิ้งย่างสไตล์ไทยยอดฮิต ย่างหมูบนกระทะพร้อมต้มผักในซุปรอบๆ",
+    "purpose": [
+      "สร้างบรรยากาศการทานอาหารร่วมกัน",
+      "อิ่มคุ้มในราคาประหยัด"
+    ],
+    "code_example": "{ id: 'FOOD02', name: 'หมูกระทะชุดใหญ่', price: 299 }",
+    "explanation": "ชุดหมูกระทะเสิร์ฟพร้อมผักสดและน้ำจิ้มสูตรเด็ด",
+    "application": "ใช้แสดงผลในเมนูยอดนิยมหน้าหลัก",
+    "keywords": [
+      "หมูกระทะ",
+      "ปิ้งย่าง"
+    ],
+    "image": "https://images.unsplash.com/photo-1544025162-d76694265947?w=500"
+  },
+  {
+    "id": "FOOD03",
+    "category_id": "C01",
+    "category": "ชาบู & สุกี้",
+    "topic": "หม่าล่าหม้อไฟเสฉวน",
+    "summary": "หม่าล่าซุปรสเผ็ดลิ้นชา หอมเครื่องเทศเสฉวนแท้ๆ สายชาบูเผ็ดร้อนต้องลอง",
+    "concept": "หม้อไฟหม่าล่ารสชาติเผ็ดร้อนเอกลักษณ์จากจีน เลือกวัตถุดิบเสียบไม้ได้ตามใจชอบ",
+    "purpose": [
+      "ตอบโจทย์คนชอบรสชาติเผ็ดจัดจ้าน",
+      "เลือกระดับความเผ็ดได้"
+    ],
+    "code_example": "{ id: 'FOOD03', name: 'หม่าล่าหม้อไฟ', price: 450 }",
+    "explanation": "หม่าล่าหม้อไฟเลือกซุปหม่าล่าผสมซุปกระดูกหมูได้",
+    "application": "ใช้แสดงในหน้าค้นหาร้านอาหารเผ็ดร้อน",
+    "keywords": [
+      "หม่าล่า",
+      "เผ็ดชา"
+    ],
+    "image": "https://images.unsplash.com/photo-1569718212165-3a8278d5f624?w=500"
+  },
+  {
+    "id": "FOOD04",
+    "category_id": "C01",
+    "category": "ชาบู & สุกี้",
+    "topic": "สุกี้น้ำโบราณ",
+    "summary": "สุกี้น้ำเต้าหู้ยี้สูตรโบราณ เครื่องแน่นทั้งหมูนุ่ม หมึกกรอบ และกุ้งสด",
+    "concept": "สุกี้จานเดี่ยวที่เข้มข้นด้วยซอสเต้าหู้ยี้และไข่ไก่สด ผัดหอมกลิ่นกระทะ",
+    "purpose": [
+      "อาหารจานด่วนอิ่มอร่อย",
+      "รสชาติกลมกล่อมแบบดั้งเดิม"
+    ],
+    "code_example": "{ id: 'FOOD04', name: 'สุกี้น้ำรวมมิตร', price: 80 }",
+    "explanation": "สุกี้โบราณเน้นความหอมของซอสเต้าหู้ยี้",
+    "application": "ใช้แสดงในกลุ่มอาหารจานเดี่ยว",
+    "keywords": [
+      "สุกี้",
+      "สุกี้โบราณ"
+    ],
+    "image": "https://images.unsplash.com/photo-1547592166-23ac45744acd?w=500"
+  },
+  {
+    "id": "FOOD05",
+    "category_id": "C02",
+    "category": "เส้น & จานเดี่ยว",
+    "topic": "ราดหน้ายอดผักหมูนุ่ม",
+    "summary": "ราดหน้าเส้นใหญ่ผัดหอมกลิ่นกระทะ น้ำราดเหนียวนุ่ม ผักคะน้ากรอบอร่อย",
+    "concept": "เมนูเส้นยอดนิยมที่นำเส้นไปผัดให้หอม แล้วราดด้วยน้ำซุปหมักกลมกล่อม",
+    "purpose": [
+      "ทานง่าย เหมาะกับทุกวัย",
+      "หมูนุ่มหมักเข้าเนื้อ"
+    ],
+    "code_example": "{ id: 'FOOD05', name: 'ราดหน้าหมูนุ่ม', price: 65 }",
+    "explanation": "ราดหน้าใช้คะน้าฮ่องกงกรอบนุ่ม",
+    "application": "ใช้แสดงในหมวดหมู่อาหารสไตล์จีน-ไทย",
+    "keywords": [
+      "ราดหน้า",
+      "เส้นใหญ่"
+    ],
+    "image": "https://images.unsplash.com/photo-1585032226651-759b368d7246?w=500"
+  },
+  {
+    "id": "FOOD06",
+    "category_id": "C02",
+    "category": "เส้น & จานเดี่ยว",
+    "topic": "ก๋วยเตี๋ยวต้มยำสุโขทัย",
+    "summary": "ก๋วยเตี๋ยวต้มยำรสแซ่บ ใส่ถั่วฝักยาว ถั่วลิสงคั่วใหม่ๆ และถั่วกระจก",
+    "concept": "ก๋วยเตี๋ยวต้มยำน้ำขลุกขลิกรสจัดจ้าน ครบเครื่องเปรี้ยว เค็ม หวาน เผ็ด",
+    "purpose": [
+      "รสชาติจัดจ้านไม่ต้องปรุงเพิ่ม",
+      "เอกลักษณ์ก๋วยเตี๋ยวไทยดั้งเดิม"
+    ],
+    "code_example": "{ id: 'FOOD06', name: 'ต้มยำสุโขทัย', price: 60 }",
+    "explanation": "ก๋วยเตี๋ยวต้มยำปรุงรสด้วยมะนาวสดแท้",
+    "application": "ใช้แสดงในหมวดเมนูก๋วยเตี๋ยว",
+    "keywords": [
+      "ก๋วยเตี๋ยว",
+      "ต้มยำ"
+    ],
+    "image": "https://images.unsplash.com/photo-1617093727343-374698b1b08d?w=500"
+  },
+  {
+    "id": "FOOD07",
     "category_id": "C03",
-    "category": "Data Management",
-    "topic": "การใช้ map()",
-    "summary": "map() แปลงสมาชิกแต่ละตัวของ Array เป็นค่าหรือ JSX ที่ต้องการแสดง",
-    "concept": "map() แปลงสมาชิกแต่ละตัวของ Array เป็นค่าหรือ JSX ที่ต้องการแสดง",
+    "category": "อาหารไทย & อีสาน",
+    "topic": "ส้มตำปูปลาร้ารสแซ่บ",
+    "summary": "ส้มตำปูปลาร้าน้ำนัวๆ มะละกอกรอบ หอมกลิ่นมะนาวแท้ เผ็ดจัดจ้าน",
+    "concept": "อาหารอีสานยอดฮิต รสชาติเผ็ด เปรี้ยว เค็ม นัวน้ำปลาร้าต้มสุกสูตรพิเศษ",
     "purpose": [
-      "แสดงรายการจากข้อมูลโดยไม่เขียน UI ซ้ำ"
+      "เมนูทานเล่นหรือทานจริงจัง",
+      "รสชาติอีสานแท้รับประกันความนัว"
     ],
-    "code_example": "{topics.map(item => <Text key={item.id}>{item.topic}</Text>)}",
-    "explanation": "key ช่วยให้ React ติดตามเอกลักษณ์ของแต่ละรายการ",
-    "application": "สร้างรายการหัวข้อจาก Array ของ JSON",
+    "code_example": "{ id: 'FOOD07', name: 'ส้มตำปูปลาร้า', price: 50 }",
+    "explanation": "ส้มตำแซ่บนัวเลือกความเผ็ดตามระดับพริกได้",
+    "application": "ใช้แสดงในหมวดอาหารอีสานสุดฮิต",
     "keywords": [
-      "การใช้",
-      "React Native"
+      "ส้มตำ",
+      "ปลาร้า"
     ],
-    "image": "images/rn11.png"
+    "image": "https://images.unsplash.com/photo-1590301157890-4810ed352733?w=500"
   },
   {
-    "id": "RN12",
-    "category_id": "C03",
-    "category": "Data Management",
-    "topic": "การแยกไฟล์ Data",
-    "summary": "การแยกข้อมูลออกจากหน้าจอเป็นตัวอย่างการแยกหน้าที่ระหว่าง Data และ UI",
-    "concept": "การแยกข้อมูลออกจากหน้าจอเป็นตัวอย่างการแยกหน้าที่ระหว่าง Data และ UI",
+    "id": "FOOD08",
+    "category_id": "C01",
+    "category": "ปิ้งย่าง & หมูกระทะ",
+    "topic": "ปิ้งย่างบาร์บีคิวเกาหลี",
+    "summary": "เนื้อหมูสามชั้นหมักซอสโคชูจัง ปิ้งย่างบนเตา ทานคู่กับผักสดและกิมจิ",
+    "concept": "บาร์บีคิวสไตล์เกาหลี พร้อมเครื่องเคียงไม่อั้น และซัมจังรสเด็ด",
     "purpose": [
-      "อ่านข้อมูลจากไฟล์ใน Project ได้"
+      "ประสบการณ์การกินปิ้งย่างสไตล์เกาหลี",
+      "เครื่องเคียงหลากหลาย"
     ],
-    "code_example": "import topics from \"../data/topic\";",
-    "explanation": "import อ่านค่าที่ไฟล์ topic.js export ออกมา",
-    "application": "ทดลองใช้ข้อมูลภายในก่อนเปลี่ยนไปใช้ GitHub",
+    "code_example": "{ id: 'FOOD08', name: 'ชุดปิ้งย่างเกาหลี', price: 350 }",
+    "explanation": "เสิร์ฟพร้อมผักสลัด กิมจิ และซอสเกาหลี",
+    "application": "ใช้แสดงในหมวดอาหารนานาชาติ/ปิ้งย่าง",
     "keywords": [
-      "การแยกไฟล์",
-      "React Native"
+      "ปิ้งย่าง",
+      "เกาหลี"
     ],
-    "image": "images/rn12.png"
+    "image": "https://images.unsplash.com/photo-1599488615731-7e5c2823ff28?w=500"
   },
   {
-    "id": "RN13",
-    "category_id": "C03",
-    "category": "Data Management",
-    "topic": "การอ่าน JSON จาก GitHub",
-    "summary": "GitHub สามารถโฮสต์ไฟล์ JSON แบบสาธารณะเพื่อให้แอปอ่านผ่าน Raw URL ได้",
-    "concept": "GitHub สามารถโฮสต์ไฟล์ JSON แบบสาธารณะเพื่อให้แอปอ่านผ่าน Raw URL ได้",
-    "purpose": [
-      "เตรียม Repository และ Raw URL ที่อ่านข้อมูลได้"
-    ],
-    "code_example": "const DATA_URL = \"https://raw.githubusercontent.com/owner/repo/main/data/topic.json\";",
-    "explanation": "URL นี้เป็นรูปแบบตัวอย่าง ต้องเปลี่ยน owner และ repo ให้ตรงแหล่งข้อมูลจริง",
-    "application": "เก็บข้อมูลแต่ละกลุ่มบน GitHub แล้วทดลองเปิด Raw URL",
-    "keywords": [
-      "การอ่าน",
-      "React Native"
-    ],
-    "image": "images/rn13.png"
-  },
-  {
-    "id": "RN14",
+    "id": "FOOD09",
     "category_id": "C04",
-    "category": "State และการดึงข้อมูล",
-    "topic": "State และ useState()",
-    "summary": "State เก็บข้อมูลที่เปลี่ยนระหว่างการทำงานของ Component เมื่อเรียก setter React จะจัดตารางการเรนเดอร์ใหม่",
-    "concept": "State เก็บข้อมูลที่เปลี่ยนระหว่างการทำงานของ Component เมื่อเรียก setter React จะจัดตารางการเรนเดอร์ใหม่",
+    "category": "ของหวาน & เครื่องดื่ม",
+    "topic": "ไอศกรีมซอฟต์เสิร์ฟมัทฉะ",
+    "summary": "ไอศกรีมซอฟต์เสิร์ฟชาเขียวมัทฉะแท้จากอุจิ รสชาติเข้มข้น หอมหวานกำลังดี",
+    "concept": "ของหวานล้างปากหลังทานของคาว ไอศกรีมเนื้อนุ่มละมุนลิ้น",
     "purpose": [
-      "เก็บข้อมูลรายการและสถานะการแสดงผล"
+      "ดับร้อนล้างปากหลังมื้ออาหาร",
+      "ใช้วัตถุดิบมัทฉะเกรดพรีเมียม"
     ],
-    "code_example": "const [topics, setTopics] = useState([]);",
-    "explanation": "topics คือค่าปัจจุบัน และ setTopics เป็นฟังก์ชันอัปเดต State",
-    "application": "เก็บรายการเนื้อหาที่อ่านจาก GitHub",
+    "code_example": "{ id: 'FOOD09', name: 'ไอศกรีมมัทฉะ', price: 49 }",
+    "explanation": "ไอศกรีมซอฟต์เสิร์ฟหวานน้อยกลิ่นชาเขียวชัดเจน",
+    "application": "ใช้แสดงในหมวดของหวานและของทานเล่น",
     "keywords": [
-      "State",
-      "React Native"
+      "ไอศกรีม",
+      "มัทฉะ"
     ],
-    "image": "images/rn14.png"
+    "image": "https://images.unsplash.com/photo-1563805042-7684c019e1cb?w=500"
   },
   {
-    "id": "RN15",
+    "id": "FOOD10",
     "category_id": "C04",
-    "category": "State และการดึงข้อมูล",
-    "topic": "useEffect()",
-    "summary": "useEffect ใช้เชื่อม Component กับระบบภายนอก เช่น การโหลดข้อมูลผ่านเครือข่าย",
-    "concept": "useEffect ใช้เชื่อม Component กับระบบภายนอก เช่น การโหลดข้อมูลผ่านเครือข่าย",
+    "category": "ของหวาน & เครื่องดื่ม",
+    "topic": "ชาไข่มุกไต้หวันบราวน์ซูการ์",
+    "summary": "ชาเข้มข้นหอมกลิ่นชาไต้หวัน พร้อมไข่มุกเคี่ยวซอสน้ำตาลดำเหนียวนุ่ม",
+    "concept": "เครื่องดื่มยอดฮิต รสชาติหวานมันเคี้ยวเพลินด้วยไข่มุกหนึบหนับ",
     "purpose": [
-      "เรียกการโหลดข้อมูลเมื่อ Component เริ่มแสดง"
+      "เครื่องดื่มคลายร้อนเคี้ยวเพลิน",
+      "เลือกระดับความหวานได้"
     ],
-    "code_example": "useEffect(() => { loadTopics(); }, []);",
-    "explanation": "dependency array ว่างทำให้ Effect ทำงานเมื่อ mount และในโหมดพัฒนาบางกรณีอาจถูกตรวจการทำงานซ้ำ",
-    "application": "สั่งโหลดบทเรียนเมื่อเปิดหน้า Knowledge",
+    "code_example": "{ id: 'FOOD10', name: 'ชาไข่มุกบราวน์ซูการ์', price: 55 }",
+    "explanation": "ชาไข่มุกใช้นมสดแท้และไข่มุกเคี่ยวสดใหม่",
+    "application": "ใช้แสดงในหมวดเครื่องดื่มยอดนิยม",
     "keywords": [
-      "useEffect()",
-      "React Native"
+      "ชาไข่มุก",
+      "เครื่องดื่ม"
     ],
-    "image": "images/rn15.png"
-  },
-  {
-    "id": "RN16",
-    "category_id": "C04",
-    "category": "State และการดึงข้อมูล",
-    "topic": "fetch() และ Async/Await",
-    "summary": "fetch() เรียกข้อมูลจาก URL ส่วน async/await ช่วยเขียนการทำงานแบบ asynchronous ให้อ่านง่าย",
-    "concept": "fetch() เรียกข้อมูลจาก URL ส่วน async/await ช่วยเขียนการทำงานแบบ asynchronous ให้อ่านง่าย",
-    "purpose": [
-      "ดึงและแปลง JSON เป็น Array เพื่อนำไปแสดง"
-    ],
-    "code_example": "const response = await fetch(DATA_URL);\nif (!response.ok) throw new Error(\"HTTP \" + response.status);\nconst data = await response.json();\nsetTopics(data);",
-    "explanation": "ตรวจ response.ok ก่อนอ่าน JSON และบันทึกลง State",
-    "application": "ดึง Data ชุดที่ 1 และ 2 จาก URL คนละชุด",
-    "keywords": [
-      "fetch()",
-      "React Native"
-    ],
-    "image": "images/rn16.png"
-  },
-  {
-    "id": "RN17",
-    "category_id": "C04",
-    "category": "State และการดึงข้อมูล",
-    "topic": "Loading, Error และ Retry",
-    "summary": "การแสดงสถานะช่วยให้ผู้ใช้ทราบว่าแอปกำลังทำอะไรและสามารถลองโหลดใหม่ได้",
-    "concept": "การแสดงสถานะช่วยให้ผู้ใช้ทราบว่าแอปกำลังทำอะไรและสามารถลองโหลดใหม่ได้",
-    "purpose": [
-      "จัดการช่วงรอและกรณีเครือข่ายผิดพลาด"
-    ],
-    "code_example": "if (loading) return <ActivityIndicator />;\nif (error) return <Button title=\"ลองใหม่\" onPress={loadTopics} />;",
-    "explanation": "แสดง Indicator ขณะรอและปุ่ม Retry เมื่อมี Error",
-    "application": "เพิ่มสถานะ Loading และ Error ในหน้ารายการ",
-    "keywords": [
-      "Loading,",
-      "React Native"
-    ],
-    "image": "images/rn17.png"
-  },
-  {
-    "id": "RN18",
-    "category_id": "C05",
-    "category": "Navigation",
-    "topic": "Navigation คืออะไร",
-    "summary": "React Navigation เป็นไลบรารีที่ช่วยกำหนดเส้นทางและสถานะการนำทางระหว่างหน้าจอ",
-    "concept": "React Navigation เป็นไลบรารีที่ช่วยกำหนดเส้นทางและสถานะการนำทางระหว่างหน้าจอ",
-    "purpose": [
-      "เข้าใจการจัดกลุ่ม Navigator และหน้าจอ"
-    ],
-    "code_example": "<NavigationContainer><TopicStack /></NavigationContainer>",
-    "explanation": "NavigationContainer เป็นคอนเทนเนอร์สำหรับ Navigation ในตัวอย่าง React Navigation แบบทั่วไป",
-    "application": "วางโครงสร้างนำทางก่อนพัฒนาทุกหน้าจอ",
-    "keywords": [
-      "Navigation",
-      "React Native"
-    ],
-    "image": "images/rn18.png"
-  },
-  {
-    "id": "RN19",
-    "category_id": "C05",
-    "category": "Navigation",
-    "topic": "Stack Navigation",
-    "summary": "Stack ใช้จัดลำดับหน้าที่ผู้ใช้เปิดต่อกันและย้อนกลับได้",
-    "concept": "Stack ใช้จัดลำดับหน้าที่ผู้ใช้เปิดต่อกันและย้อนกลับได้",
-    "purpose": [
-      "เชื่อมหน้ารายการกับหน้ารายละเอียด"
-    ],
-    "code_example": "<Stack.Screen name=\"TopicDetail\" component={TopicDetailScreen} />",
-    "explanation": "กำหนดชื่อเส้นทางและคอมโพเนนต์ของหน้ารายละเอียด",
-    "application": "เปิด TopicDetail จากการกดรายการใน TopicList",
-    "keywords": [
-      "Stack",
-      "React Native"
-    ],
-    "image": "images/rn19.png"
-  },
-  {
-    "id": "RN20",
-    "category_id": "C05",
-    "category": "Navigation",
-    "topic": "Tab Navigation",
-    "summary": "Tab แสดงตัวเลือกการนำทางระหว่างส่วนหลักของแอป มักแสดงด้านล่าง",
-    "concept": "Tab แสดงตัวเลือกการนำทางระหว่างส่วนหลักของแอป มักแสดงด้านล่าง",
-    "purpose": [
-      "สร้างเมนูสลับ My Content และ Knowledge"
-    ],
-    "code_example": "<Tab.Screen name=\"Knowledge\" component={KnowledgeScreen} />",
-    "explanation": "เพิ่มหน้าชื่อ Knowledge เข้า Tab Navigator",
-    "application": "สร้าง Tab สำหรับชุดข้อมูลสองประเภท",
-    "keywords": [
-      "Tab",
-      "React Native"
-    ],
-    "image": "images/rn20.png"
+    "image": "https://images.unsplash.com/photo-1558857563-b371033873b8?w=500"
   }
 ]
